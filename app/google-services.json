@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "155778408897",
+    "firebase_url": "https://desi-jewellery.firebaseio.com",
+    "project_id": "desi-jewellery",
+    "storage_bucket": "desi-jewellery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155778408897:android:b4af83ac3e88221a",
+        "android_client_info": {
+          "package_name": "satlaa.desijewellery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155778408897-vai15q8f2opo7q9np9tlrnoboph8nahs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "satlaa.desijewellery",
+            "certificate_hash": "66a1404db212c3c8453dab784d11f643f0de0da7"
+          }
+        },
+        {
+          "client_id": "155778408897-75v66v5hfabfuttfkj32c0srkg8qrpdd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCps0xsHtZFOo1VXAsc1SCYHmn6Yo3wFdc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155778408897-75v66v5hfabfuttfkj32c0srkg8qrpdd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

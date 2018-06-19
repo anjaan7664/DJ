@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Desi Jewellery"</string>
+    <string name="title_activity_about__us">About_Us</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="aad">आड़</string>
+    <string name="aawla">आंवला</string>
+    <string name="desi_aad">देसी आड़</string>
+    <string name="mini_aad">मिनी आड़</string>
+    <string name="bangles">चूड़िया</string>
+    <string name="baali">बाळी</string>
+    <string name="bhujbandh">भुजबंध</string>
+    <string name="baajubandh">बाजुबंध</string>
+    <string name="bracelate">ब्रेसलेट</string>
+    <string name="chain">चैन</string>
+    <string name="chik">चिक सेट</string>
+    <string name="hathphool">हथफूल</string>
+    <string name="jhoomariya">झूमरिया</string>
+    <string name="kandora">कंदोरा</string>
+    <string name="mangalsutra">मंगलसूत्र</string>
+    <string name="nath">नथ</string>
+    <string name="necklace">नेकलेस</string>
+    <string name="jodha_haar">जोधा हार</string>
+    <string name="kanti">कंटी</string>
+    <string name="punach">पुनच</string>
+    <string name="nogariya">नोगरीया</string>
+    <string name="bala">बाला</string>
+    <string name="bala_jhela">बाला + झेला</string>
+    <string name="pendal">चैन पेंडल</string>
+    <string name="rakhdi_set">रखडी सेट</string>
+    <string name="rakhdi">रखडी</string>
+    <string name="bena">बेणा</string>
+    <string name="bor">बोर</string>
+    <string name="ring">रिंग</string>
+    <string name="emboss_ring">एम्बोज रिंग</string>
+    <string name="gents_ring">जेंट्स रिंग</string>
+    <string name="ladies_ring">लेडीज रिंग</string>
+    <string name="ram_navmi">राम नवमी</string>
+    <string name="sohan_kanthi">सोहन कंठी</string>
+    <string name="sheeshphool">शीश फूल</string>
+    <string name="thusi">ठूसी</string>
+    <string name="timaniya">तिमणिया</string>
+    <string name="teeka">टीका</string>
+    <string name="others">अन्य</string>
+    <string name="unique">यूनिक</string>
+    <string name="desi_jewellery">देसी ज्वैलरी</string>
+    <string name="emboss_jewellery">एम्बोज़ ज्वैलरी</string>
+    <string name="kundan_jewellwey">कुंदन ज्वैलरी</string>
+    <string name="fancy_ring">फैंसी रिंग</string>
+    <string name="new_photos">न्यू फोटोज</string>
+    <string name="design">यूनिक डिजाईन</string>
+    <string name="upload">अपलोड डिजाईन</string>
+    <string name="myprofile">My Profile</string>
+
+
+</resources>

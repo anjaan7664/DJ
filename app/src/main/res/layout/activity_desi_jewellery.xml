@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="satlaa.desijewellery.Desi_Jewellery">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/desi_new_photos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/new_photos" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_aad"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/aad"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/aad"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_desi_aad"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/d_aad"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/desi_aad"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_mini_aad"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/mini_aad"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/mini_aad"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/aawla"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/aawla"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/aawla"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/kanti"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/kanti"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/kanti"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_bangles"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_bangles"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/bangles"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_bala"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bala"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/bala"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_bala_jhela"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bala_jhela"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/bala_jhela"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_baali"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/baali"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/nath"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_baajubandh"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/baaju"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/baajubandh"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_bhujbandh"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bhujbandh"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/bhujbandh"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_bracelate"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bracelate"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/bracelate"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_chain"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/chain"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/chain"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_chik"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/chick"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/chik"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:orientation="vertical"
+                        android:textColor="@color/white">
+
+                        <Button
+                            android:id="@+id/desi_hathphool"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/hathphool"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/hathphool"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_jhoomariya"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/jhoomariya"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/jhoomariya"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_kandora"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/kandora"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/kandora"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_mangalsutra"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/mangalsutra"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/mangalsutra"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_nath"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/nath"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/nath"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_necklace"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/necklace"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/necklace"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_jodha_haar"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/jodha_haar"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/jodha_haar"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_nogariya"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/nogariya"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/nogariya"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_punach"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/punach"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/punach"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_pendal"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/pendal"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/pendal"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_rakhdi_set"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/r_set"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/rakhdi_set"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_rakhdi"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/rakhdi"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/rakhdi"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_bena"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bena"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/bena"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_bor"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bor"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/bor"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_teeka"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/teeka"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/teeka"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_ladies_ring"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/l_ring"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/ladies_ring"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_gents_ring"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/gents_ring"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/gents_ring"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_fancy_ring"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/fancy_ring"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/fancy_ring"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_ram_navmi"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_ramnavmi"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/ram_navmi"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_sohan_kanthi"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/sohan_kanthi"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/sohan_kanthi"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_thusi"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/thusi"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/thusi"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_timaniya"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/timaniya"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/timaniya"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/desi_sheeshphool"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/sheeshphool"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/sheeshphool"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_others"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unique"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/others"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/desi_unique"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unique"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:text="@string/unique"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="satlaa.desijewellery.Desi_Jewellery">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/emboss_aad"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_aad"
+                            android:text="@string/aad"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/emboss_bangles"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_bangles"
+                            android:text="@string/bangles"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/emboss_bhujbandh"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_bhujbandh"
+                            android:text="@string/bhujbandh"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/emboss_baajubandh"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_baaju"
+                            android:text="@string/baajubandh"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/emboss_mangalsutra"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_mangalsutra"
+                            android:text="@string/mangalsutra"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/emboss_necklace"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_necklace"
+                            android:text="@string/necklace"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/emboss_bala"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_bala"
+                            android:text="@string/bala"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/emboss_bala_jhela"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_bala_jhela"
+                            android:text="@string/bala_jhela"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/emboss_ring"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_lring"
+                            android:text="@string/ladies_ring"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/emboss_ram_navmi"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_ramnavmi"
+                            android:text="@string/ram_navmi"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/emboss_rakhdi_set"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/e_rset"
+                            android:text="@string/rakhdi_set"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/emboss_jhoomariya"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/jhoomariya"
+                            android:text="@string/jhoomariya"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/emboss_sohan_kanthi"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/sohan_kanthi"
+                            android:text="@string/sohan_kanthi"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="bottom|right" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

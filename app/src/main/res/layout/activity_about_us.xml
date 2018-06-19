@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="satlaa.desijewellery.About_Us">
+
+
+    <TextView
+        android:id="@+id/textView_anjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Developed By -"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/red"
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:id="@+id/btn_anjaan"
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:background="@drawable/mukesh"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/textView_anjaan"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_anjaan"
+        android:text="Our Team"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/red"
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:id="@+id/btn_ujju"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:background="@drawable/ujju"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_below="@+id/btn_kishor"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/btn_kailash"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_ujju"
+        android:background="@drawable/kailash"
+        android:foreground="?android:attr/selectableItemBackground" />
+
+
+    <ImageButton
+        android:id="@+id/btn_sunil"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView3"
+        android:background="@drawable/sunil"
+        android:foreground="?android:attr/selectableItemBackground" />
+
+    <ImageButton
+        android:id="@+id/btn_kishor"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_sunil"
+        android:background="@drawable/kishor_soni"
+        android:foreground="?android:attr/selectableItemBackground" />
+
+    <ImageButton
+        android:id="@+id/btn_ranveer"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_kailash"
+        android:background="@drawable/ranveer"
+        android:foreground="?android:attr/selectableItemBackground" />
+
+
+</RelativeLayout>

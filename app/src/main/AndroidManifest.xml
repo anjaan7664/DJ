@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="satlaa.desijewellery">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".CustomApplication"
+        android:allowBackup="true"
+        android:configChanges="locale|orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            android:icon="@mipmap/ic_launcher"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Desi_Jewellery"
+            android:label="@string/desi_jewellery"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Emboss"
+            android:label="@string/emboss_jewellery"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".About_Us"
+            android:label="About App"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Webview"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+            android:name=".users.Kailash_Soni"
+            android:parentActivityName=".About_Us" />
+        <activity
+            android:name=".users.Ujjwal_Soni"
+            android:parentActivityName=".About_Us" />
+        <activity
+            android:name=".users.Sunil_Soni"
+            android:parentActivityName=".About_Us" />
+        <activity
+            android:name=".users.Manish_Soni"
+            android:parentActivityName=".About_Us" />
+
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".users.Kishor_Soni" />
+        <activity android:name=".users.AnjaanSoni" />
+        <activity android:name=".users.Ranveer" />
+        <activity android:name=".Kundan_Jewellery"></activity>
+    </application>
+
+</manifest>

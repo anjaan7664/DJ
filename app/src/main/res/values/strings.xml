@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Desi Jewellery "</string>
+    <string name="title_activity_about__us">About_Us</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="aad">Aad</string>
+    <string name="aawla">Aawla</string>
+    <string name="desi_aad">Desi\n Aad</string>
+    <string name="mini_aad">Mini\n Aad</string>
+    <string name="bangles">Bangles</string>
+    <string name="baali">Baali</string>
+    <string name="bhujbandh">Bhuj- &#160;\nbandh</string>
+    <string name="baajubandh">Baaju-\nbandh</string>
+    <string name="bracelate">Brace\n-late &#160;</string>
+    <string name="chain">Chain</string>
+    <string name="chik">Chik Set</string>
+    <string name="hathphool">Hath-\nphool</string>
+    <string name="jhoomariya">Jhoo-   \nmariya</string>
+    <string name="kandora">Kandora</string>
+    <string name="mangalsutra">Mangal\nsutra&#160;&#160;</string>
+    <string name="nath">Nath</string>
+    <string name="necklace">Necklace</string>
+    <string name="jodha_haar">Jodha\n Haar</string>
+    <string name="kanti">Kanti</string>
+    <string name="punach">Punach</string>
+    <string name="nogariya">Noga-\nriya&#160;&#160;</string>
+    <string name="bala">Bala</string>
+    <string name="bala_jhela">Bala \n Jhela</string>
+    <string name="pendal">Pendal</string>
+    <string name="rakhdi_set">Rakhdi\n Set&#160;&#160;&#160;</string>
+    <string name="rakhdi">Rakhdi</string>
+    <string name="bena">Bena</string>
+    <string name="bor">Bor</string>
+    <string name="ring">Ring</string>
+    <string name="emboss_ring">Emboss-\n Ring&#160;&#160;&#160;</string>
+    <string name="gents_ring">Gents-\n Ring&#160;&#160;&#160;</string>
+    <string name="fancy_ring">Fancy-\n Ring&#160;&#160;&#160;</string>
+    <string name="ladies_ring">Ladies-\n Ring&#160;&#160;&#160;</string>
+    <string name="ram_navmi">Ram- &#160;\n Navmi</string>
+    <string name="sohan_kanthi">Sohan-\n Kanthi</string>
+    <string name="sheeshphool">Sheesh\n Phool</string>
+    <string name="thusi">Thusi</string>
+    <string name="timaniya">Tima-\nniya&#160;&#160;</string>
+    <string name="teeka">Teeka</string>
+    <string name="others">Others</string>
+    <string name="unique">Unique</string>
+    <string name="desi_jewellery">Desi Jewellery</string>
+    <string name="emboss_jewellery">Emboss Jewellery</string>
+    <string name="kundan_jewellwey">Kundan Jewellery</string>
+    <string name="new_photos">New Photos</string>
+    <string name="upload">Upload Design</string>
+    <string name="myprofile">My Profile</string>
+
+</resources>

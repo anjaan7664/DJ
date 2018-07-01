@@ -10,6 +10,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.LinearSmoothScroller;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +28,13 @@ import com.android.volley.ServerError;
 import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdLoader;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.formats.NativeAd;
+import com.google.android.gms.ads.formats.NativeAppInstallAd;
+import com.google.android.gms.ads.formats.NativeContentAd;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -54,6 +61,8 @@ public class DJPhotos extends FragmentActivity {
     private static final String script = url + "android/android_script.php";
     static final String REQ_TAG = "VACTIVITY";
     public ArrayList<Photos> imagelist = new ArrayList<>();
+
+    private List<Object> mRecyclerViewItems = new ArrayList<>();
     // Variable for pagination
     private int pageNumber = 1;
     private boolean isLoading = true;
@@ -67,16 +76,16 @@ public class DJPhotos extends FragmentActivity {
 
     RecyclerView.LayoutManager mLayoutManager;
     boolean isFirstTime = true;
-    public static final int NUMBER_OF_ADS = 5;
 
-    // List of native ads that have been successfully loaded.
-    private List<NativeAd> mNativeAds = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_djphotos);
         progressBar = findViewById(R.id.progressBar);
+
+        MobileAds.initialize(this, getString(R.string.admob_app_id));
+
         progressBarBottom = findViewById(R.id.progressBarBottom);
         Intent intent = getIntent();
         table = intent.getStringExtra("table");
@@ -325,6 +334,7 @@ public class DJPhotos extends FragmentActivity {
             super.onBackPressed();
         }
     }
+
 
 
 }

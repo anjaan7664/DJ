@@ -1,4 +1,4 @@
-package satlaa.desijewellery;
+package satlaa.desijewellery.Utils;
 
 import android.content.Context;
 import android.content.res.Configuration;

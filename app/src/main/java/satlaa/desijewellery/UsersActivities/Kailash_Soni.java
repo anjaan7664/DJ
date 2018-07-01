@@ -1,4 +1,4 @@
-package satlaa.desijewellery.users;
+package satlaa.desijewellery.UsersActivities;
 
 import android.content.Context;
 import android.content.Intent;

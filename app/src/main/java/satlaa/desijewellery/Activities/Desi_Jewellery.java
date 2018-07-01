@@ -1,4 +1,4 @@
-package satlaa.desijewellery;
+package satlaa.desijewellery.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +13,9 @@ import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
+import satlaa.desijewellery.HelperActivity.DJPhotos;
+import satlaa.desijewellery.R;
+
 public class Desi_Jewellery extends AppCompatActivity {
     ImageView imagebutton;
     Button button;
@@ -25,7 +28,7 @@ public class Desi_Jewellery extends AppCompatActivity {
         setContentView(R.layout.activity_desi_jewellery);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         MobileAds.initialize(getApplicationContext(),
-                "ca-app-pub-9733613923055204~2060000795");
+                getString(R.string.admob_app_id));
 
         AdRequest adRequest = new AdRequest.Builder().build();
         interstitialAd = new InterstitialAd(this);
@@ -41,8 +44,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/new_photos.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "new_photos");
                 startActivity(intent);
             }
         });
@@ -50,8 +53,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/aad.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "aad");
                 startActivity(intent);
             }
         });
@@ -59,8 +62,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/desi_aad.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "desi_aad");
                 startActivity(intent);
             }
         });
@@ -68,8 +71,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/mini_aad.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "mini_aad");
                 startActivity(intent);
             }
         });
@@ -77,8 +80,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/bangles.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "bangles");
                 startActivity(intent);
             }
         });
@@ -86,8 +89,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/baali.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "baali");
                 startActivity(intent);
             }
         });
@@ -95,8 +98,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/bhujbandh.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "Bhujbandh");
                 startActivity(intent);
             }
         });
@@ -104,8 +107,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/bajubandh.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "baajubandh");
                 startActivity(intent);
             }
         });
@@ -113,8 +116,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/bracelate.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "bracelate");
                 startActivity(intent);
             }
         });
@@ -122,8 +125,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/chain.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "chain");
                 startActivity(intent);
             }
         });
@@ -131,8 +134,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/chik_set.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "chick");
                 startActivity(intent);
             }
         });
@@ -140,8 +143,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/hathphool.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "hathphool");
                 startActivity(intent);
             }
         });
@@ -149,8 +152,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/jhoomariya.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "jhoomariya");
                 startActivity(intent);
             }
         });
@@ -158,8 +161,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/kandora.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "kandora");
                 startActivity(intent);
             }
         });
@@ -167,8 +170,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/mangalsutra.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "mangalsutra");
                 startActivity(intent);
             }
         });
@@ -176,8 +179,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/nath.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "nath");
                 startActivity(intent);
             }
         });
@@ -185,8 +188,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/necklace.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "necklace");
                 startActivity(intent);
             }
         });
@@ -194,8 +197,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/jodha_haar.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "jodha_haar");
                 startActivity(intent);
             }
         });
@@ -203,8 +206,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/punach.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "punach");
                 startActivity(intent);
             }
         });
@@ -212,8 +215,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/nogariya.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "nogariya");
                 startActivity(intent);
             }
         });
@@ -221,8 +224,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/bala.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "bala");
                 startActivity(intent);
             }
         });
@@ -230,8 +233,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/bala+jhela.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "bala&jhela");
                 startActivity(intent);
             }
         });
@@ -239,8 +242,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/pendal.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "pendal");
                 startActivity(intent);
             }
         });
@@ -248,8 +251,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/rakhdi_set.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "rakhdi_set");
                 startActivity(intent);
             }
         });
@@ -257,8 +260,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/rakhdi.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "rakhdi");
                 startActivity(intent);
             }
         });
@@ -266,8 +269,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/bena.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "bena");
                 startActivity(intent);
             }
         });
@@ -275,8 +278,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/bor.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "bor");
                 startActivity(intent);
             }
         });
@@ -284,8 +287,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/ladies_ring.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "ladies_ring");
                 startActivity(intent);
             }
         });
@@ -293,8 +296,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/gents_ring.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "gents_ring");
                 startActivity(intent);
             }
         });
@@ -302,8 +305,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/fancy_ring.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "fancy_ring");
                 startActivity(intent);
             }
         });
@@ -311,8 +314,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/ram_navmi.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "ram_navmi");
                 startActivity(intent);
             }
         });
@@ -320,8 +323,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/sohan_kanthi.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "sohan_kanthi");
                 startActivity(intent);
             }
         });
@@ -329,8 +332,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/sheesh_phool.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "sheeshphool");
                 startActivity(intent);
             }
         });
@@ -338,8 +341,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/thusi.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "thusi");
                 startActivity(intent);
             }
         });
@@ -347,8 +350,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/timaniya.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "timaniya");
                 startActivity(intent);
             }
         });
@@ -356,8 +359,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/teeka.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "teeka");
                 startActivity(intent);
             }
         });
@@ -365,8 +368,8 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/desi/others.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "others");
                 startActivity(intent);
             }
         });
@@ -375,19 +378,18 @@ public class Desi_Jewellery extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desi_Jewellery.this, Webview.class);
-                intent.putExtra("link", "https://desijewel.in/desi/unique.php");
+                Intent intent = new Intent(Desi_Jewellery.this, DJPhotos.class);
+                intent.putExtra("table", "unique");
                 startActivity(intent);
             }
         });
-
 
 
     }
 
     @Override
     public void onBackPressed() {
-            super.onBackPressed();
+        super.onBackPressed();
 
 
     }

@@ -1,4 +1,4 @@
-package satlaa.desijewellery;
+package satlaa.desijewellery.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +12,9 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.analytics.FirebaseAnalytics;
+
+import satlaa.desijewellery.R;
+import satlaa.desijewellery.HelperActivity.Webview;
 
 public class Kundan_Jewellery extends AppCompatActivity {
     ImageView imagebutton;

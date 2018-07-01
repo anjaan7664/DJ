@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package satlaa.desijewellery;
+package satlaa.desijewellery.Utils;
 
 import android.util.Log;
 

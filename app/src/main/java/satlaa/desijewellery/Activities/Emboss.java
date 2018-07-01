@@ -1,4 +1,4 @@
-package satlaa.desijewellery;
+package satlaa.desijewellery.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +12,10 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.analytics.FirebaseAnalytics;
+
+import satlaa.desijewellery.HelperActivity.DJPhotos;
+import satlaa.desijewellery.R;
+import satlaa.desijewellery.HelperActivity.Webview;
 
 public class Emboss extends AppCompatActivity {
     ImageView imagebutton;
@@ -40,8 +44,8 @@ public class Emboss extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Emboss.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/emboss/aad.php");
+                Intent intent = new Intent(Emboss.this, DJPhotos.class);
+                intent.putExtra("table", "emboss_aad");
                 startActivity(intent);
             }
         });
@@ -49,8 +53,8 @@ public class Emboss extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Emboss.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/emboss/bangles.php");
+                Intent intent = new Intent(Emboss.this, DJPhotos.class);
+                intent.putExtra("table", "emboss_bangles");
                 startActivity(intent);
             }
         });
@@ -58,8 +62,8 @@ public class Emboss extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Emboss.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/emboss/bhujbandh.php");
+                Intent intent = new Intent(Emboss.this, DJPhotos.class);
+                intent.putExtra("table", "emboss_bhujbandh");
                 startActivity(intent);
             }
         });
@@ -67,8 +71,8 @@ public class Emboss extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Emboss.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/emboss/jhoomariya.php");
+                Intent intent = new Intent(Emboss.this, DJPhotos.class);
+                intent.putExtra("table", "emboss_jhoomariya");
                 startActivity(intent);
             }
         });
@@ -76,8 +80,8 @@ public class Emboss extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Emboss.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/emboss/mangalsutra.php");
+                Intent intent = new Intent(Emboss.this, DJPhotos.class);
+                intent.putExtra("table", "emboss_mangalsutra");
                 startActivity(intent);
             }
         });
@@ -85,8 +89,8 @@ public class Emboss extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Emboss.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/emboss/necklace.php");
+                Intent intent = new Intent(Emboss.this, DJPhotos.class);
+                intent.putExtra("table", "emboss_necklace");
                 startActivity(intent);
             }
         });
@@ -94,8 +98,8 @@ public class Emboss extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Emboss.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/emboss/bala.php");
+                Intent intent = new Intent(Emboss.this, DJPhotos.class);
+                intent.putExtra("table", "emboss_bala");
                 startActivity(intent);
             }
         });
@@ -103,8 +107,8 @@ public class Emboss extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Emboss.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/emboss/rakhdi_set.php");
+                Intent intent = new Intent(Emboss.this, DJPhotos.class);
+                intent.putExtra("table", "emboss_rakhdi_set");
                 startActivity(intent);
             }
         });
@@ -112,8 +116,8 @@ public class Emboss extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Emboss.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/emboss/ladies_ring.php");
+                Intent intent = new Intent(Emboss.this, DJPhotos.class);
+                intent.putExtra("table", "emboss_ladies_ring");
                 startActivity(intent);
             }
         });
@@ -121,8 +125,8 @@ public class Emboss extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Emboss.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/emboss/ram_navmi.php");
+                Intent intent = new Intent(Emboss.this, DJPhotos.class);
+                intent.putExtra("table", "emboss_ram_navmi");
                 startActivity(intent);
             }
         });
@@ -130,16 +134,16 @@ public class Emboss extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Emboss.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/emboss/bala+jhela.php");
+                Intent intent = new Intent(Emboss.this, DJPhotos.class);
+                intent.putExtra("table", "emboss_bala&jhela");
                 startActivity(intent);
             }
         });  button = (Button) findViewById(R.id.emboss_baajubandh);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Emboss.this, Webview.class);
-                intent.putExtra("link", "https://www.desijewel.in/emboss/bajubandh.php");
+                Intent intent = new Intent(Emboss.this, DJPhotos.class);
+                intent.putExtra("table", "emboss_baajubandh");
                 startActivity(intent);
             }
         });

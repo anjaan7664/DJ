@@ -14,4 +14,5 @@
         android:right="2dp"
         android:top="2dp"/>
 
+    <item  android:drawable="@drawable/ripple"/>
 </layer-list>

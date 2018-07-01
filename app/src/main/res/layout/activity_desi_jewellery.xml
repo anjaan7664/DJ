@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                tools:context="satlaa.desijewellery.Desi_Jewellery">
+                tools:context="satlaa.desijewellery.Activities.Desi_Jewellery">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -57,14 +57,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/aad"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/aad"
-                            android:paddingRight="5dp"
-                            android:paddingBottom="10dp"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
+
                             android:gravity="bottom|right"
-                            />
+                            android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/aad"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -81,13 +80,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/d_aad"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/desi_aad"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/desi_aad"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -104,13 +103,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/mini_aad"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/mini_aad"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/mini_aad"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -134,13 +133,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/aawla"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/aawla"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/aawla"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -157,13 +156,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/kanti"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/kanti"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/kanti"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
                     </LinearLayout>
 
 
@@ -179,14 +178,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/e_bangles"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/bangles"
-                            android:paddingRight="5dp"
-                            android:paddingBottom="10dp"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
+
                             android:gravity="bottom|right"
-                            />
+                            android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/bangles"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -210,13 +208,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/bala"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/bala"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/bala"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -234,13 +232,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/bala_jhela"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/bala_jhela"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
-                            android:textSize="15sp"
+                            android:paddingRight="5dp"
+                            android:text="@string/bala_jhela"
                             android:textColor="@color/black"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -257,13 +255,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/baali"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/nath"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/nath"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -287,13 +285,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/baaju"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/baajubandh"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/baajubandh"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -311,13 +309,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/bhujbandh"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/bhujbandh"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/bhujbandh"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -333,13 +331,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/bracelate"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/bracelate"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/bracelate"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -365,13 +363,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/chain"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/chain"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/chain"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -386,20 +384,20 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/chick"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/chik"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/chik"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:foreground="?android:attr/selectableItemBackground"
+
                         android:orientation="vertical"
                         android:textColor="@color/white">
 
@@ -409,13 +407,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/hathphool"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/hathphool"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/hathphool"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -439,13 +437,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/jhoomariya"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/jhoomariya"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/jhoomariya"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -461,13 +459,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/kandora"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/kandora"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/kandora"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -485,13 +483,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/mangalsutra"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/mangalsutra"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/mangalsutra"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -515,13 +513,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/nath"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/nath"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/nath"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -537,13 +535,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/necklace"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/necklace"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/necklace"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -559,13 +557,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/jodha_haar"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/jodha_haar"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/jodha_haar"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -591,13 +589,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/nogariya"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/nogariya"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/nogariya"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -614,13 +612,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/punach"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/punach"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/punach"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -636,13 +634,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/pendal"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/pendal"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/pendal"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -668,13 +666,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/r_set"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/rakhdi_set"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/rakhdi_set"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -691,13 +689,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/rakhdi"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/rakhdi"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/rakhdi"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -714,13 +712,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/bena"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/bena"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/bena"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -745,13 +743,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/bor"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/bor"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/bor"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -768,13 +766,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/teeka"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/teeka"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/teeka"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -791,13 +789,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/l_ring"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/ladies_ring"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/ladies_ring"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -822,13 +820,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/gents_ring"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/gents_ring"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/gents_ring"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -845,13 +843,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/fancy_ring"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/fancy_ring"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/fancy_ring"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -867,13 +865,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/e_ramnavmi"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/ram_navmi"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/ram_navmi"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -899,13 +897,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/sohan_kanthi"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/sohan_kanthi"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/sohan_kanthi"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -922,13 +920,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/thusi"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/thusi"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/thusi"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -945,13 +943,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/timaniya"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/timaniya"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/timaniya"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -975,13 +973,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/sheeshphool"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/sheeshphool"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/sheeshphool"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -998,13 +996,13 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/unique"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/others"
-                            android:paddingRight="5dp"
+
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/others"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right" />
+                            android:textSize="15sp" />
 
 
                     </LinearLayout>
@@ -1021,13 +1019,12 @@
                             android:layout_height="70dp"
                             android:layout_margin="5dp"
                             android:background="@drawable/unique"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:text="@string/unique"
-                            android:paddingRight="5dp"
+                            android:gravity="bottom|right"
                             android:paddingBottom="10dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/unique"
                             android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:gravity="bottom|right"/>
+                            android:textSize="15sp" />
 
                     </LinearLayout>
                 </LinearLayout>

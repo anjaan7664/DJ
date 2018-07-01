@@ -1,4 +1,4 @@
-package satlaa.desijewellery.users;
+package satlaa.desijewellery.UsersActivities;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;

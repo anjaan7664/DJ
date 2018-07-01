@@ -1,4 +1,4 @@
-package satlaa.desijewellery;
+package satlaa.desijewellery.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,12 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 
-import satlaa.desijewellery.users.AnjaanSoni;
-import satlaa.desijewellery.users.Kailash_Soni;
-import satlaa.desijewellery.users.Kishor_Soni;
-import satlaa.desijewellery.users.Ranveer;
-import satlaa.desijewellery.users.Sunil_Soni;
-import satlaa.desijewellery.users.Ujjwal_Soni;
+import satlaa.desijewellery.R;
+import satlaa.desijewellery.UsersActivities.AnjaanSoni;
+import satlaa.desijewellery.UsersActivities.Kailash_Soni;
+import satlaa.desijewellery.UsersActivities.Kishor_Soni;
+import satlaa.desijewellery.UsersActivities.Ranveer;
+import satlaa.desijewellery.UsersActivities.Sunil_Soni;
+import satlaa.desijewellery.UsersActivities.Ujjwal_Soni;
 
 public class About_Us extends AppCompatActivity {
     View view;

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "155778408897-4qaifgg2cmj4kji1bje48bhphdh31hq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "satlaa.desijewellery",
+            "certificate_hash": "f45b77834e6e069543b69bf3aa5fbe2a2bfa242e"
+          }
+        },
+        {
           "client_id": "155778408897-vai15q8f2opo7q9np9tlrnoboph8nahs.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

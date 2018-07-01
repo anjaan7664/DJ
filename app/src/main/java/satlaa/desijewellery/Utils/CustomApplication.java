@@ -1,13 +1,7 @@
-package satlaa.desijewellery;
+package satlaa.desijewellery.Utils;
 
 import android.app.Application;
-import android.content.Context;
 import android.content.res.Configuration;
-import android.content.res.Resources;
-
-import java.util.Locale;
-
-import static android.content.Context.MODE_PRIVATE;
 
 public class CustomApplication extends Application {
 

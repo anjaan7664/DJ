@@ -52,5 +52,7 @@
     <string name="new_photos">New Photos</string>
     <string name="upload">Upload Design</string>
     <string name="myprofile">My Profile</string>
+    <string name="admob_app_id">ca-app-pub-9733613923055204~2060000795</string>
+    <string name="ad_unit_id">ca-app-pub-3940256099942544/8135179316</string>
 
 </resources>

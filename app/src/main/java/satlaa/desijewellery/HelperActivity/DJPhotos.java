@@ -31,6 +31,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.formats.NativeAd;
 import com.google.android.gms.ads.formats.NativeAppInstallAd;
@@ -56,14 +57,12 @@ import satlaa.desijewellery.Fragments.Full_Image;
 public class DJPhotos extends FragmentActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
-      private static final String url = "http://192.168.43.238/";
-   // private static final String url = "https://desijewel.in/";
+    //  private static final String url = "http://192.168.43.238/";
+    private static final String url = "https://desijewel.in/";
     private static final String script = url + "android/android_script.php";
     static final String REQ_TAG = "VACTIVITY";
-    public ArrayList<Photos> imagelist = new ArrayList<>();
+    private ArrayList<Object> imagelist = new ArrayList<>();
 
-    private List<Object> mRecyclerViewItems = new ArrayList<>();
-    // Variable for pagination
     private int pageNumber = 1;
     private boolean isLoading = true;
     private int pastVisibleItems, visibleItemCount, totalItemCount, previousTotal = 0;

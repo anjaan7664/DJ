@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -28,7 +29,6 @@ import satlaa.desijewellery.R;
 import satlaa.desijewellery.HelperActivity.Webview;
 
 public class MainActivity extends AppCompatActivity {
-    ImageView imagebutton;
     private InterstitialAd mInterstitialAd;
     Button button;
     private FirebaseAnalytics mFirebaseAnalytics;
@@ -208,5 +208,10 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
     }
-
+    public static void loadAd(View view){
+        AdView mAdView;
+        mAdView = (AdView) view.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+    }
 }

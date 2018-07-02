@@ -1,5 +1,6 @@
 package satlaa.desijewellery.Adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.support.v4.view.PagerAdapter;
@@ -36,6 +37,7 @@ public class MyViewPagerAdapter extends PagerAdapter {
 
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public Object instantiateItem(final ViewGroup container, int position) {
 
@@ -50,7 +52,6 @@ public class MyViewPagerAdapter extends PagerAdapter {
             public void onClick(View view) {
             }
         });
-        imageViewPreview.setOnTouchListener(new ImageMatrixTouchHandler(view.getContext()));
 
 
         Glide.with(imageViewPreview.getContext())
@@ -72,7 +73,7 @@ public class MyViewPagerAdapter extends PagerAdapter {
             public void onResourceReady(final Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
 
                 imageViewPreview.setImageBitmap(resource);
-
+                imageViewPreview.setOnTouchListener(new ImageMatrixTouchHandler(view.getContext()));
             }
 
         });

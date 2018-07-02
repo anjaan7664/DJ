@@ -32,4 +32,9 @@
     <style name="CircularProgress" parent="Theme.AppCompat.Light">
         <item name="colorAccent">#00796B</item>
     </style>
+    <style name="MyToolbar">
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="android:background">#00796B</item>
+        <item name="android:elevation">4dp</item>
+    </style>
 </resources>

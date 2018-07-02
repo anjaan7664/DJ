@@ -2,29 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
     <item
-        android:id="@+id/empty"
-        android:orderInCategory="101"
-        android:title="Language"
-        app:showAsAction="collapseActionView">
-
-        <menu>
-
-            <item
-                android:id="@+id/eng"
-
-                android:title="English"
-                app:showAsAction="ifRoom" />
-
-            <item
-                android:id="@+id/hn"
-
-                android:title="Hindi"
-                app:showAsAction="ifRoom" />
-
-        </menu>
-
-    </item>
+        android:id="@+id/menuSettings"
+        android:title="Settings" />
 
 </menu>

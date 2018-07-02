@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                tools:context="satlaa.desijewellery.Activities.Desi_Jewellery">
+                tools:context="satlaa.desijewellery.activities.Desi_Jewellery">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -35,6 +35,7 @@
                         android:id="@+id/desi_new_photos"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:theme="@style/PrimaryButton"
                         android:text="@string/new_photos" />
 
                 </LinearLayout>

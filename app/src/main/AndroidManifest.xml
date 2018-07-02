@@ -4,13 +4,13 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />=
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        android:name=".Adapter.MySingleton"
+        android:name=".adapter.MySingleton"
         android:allowBackup="true"
         android:configChanges="locale|orientation"
         android:icon="@mipmap/ic_launcher"
@@ -18,8 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.MainActivity">
-            android:icon="@mipmap/ic_launcher"
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,49 +35,50 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".Activities.Desi_Jewellery"
+            android:name=".activities.Desi_Jewellery"
             android:label="@string/desi_jewellery"
-            android:parentActivityName=".Activities.MainActivity" />
+            android:parentActivityName=".activities.MainActivity" />
         <activity
-            android:name=".HelperActivity.DJPhotos"
-            android:label="@string/desi_jewellery" />
+            android:name=".helper_activity.DJPhotos"
+            android:label="@string/desi_jewellery"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activities.Emboss"
+            android:name=".activities.Emboss_Jewellery"
             android:label="@string/emboss_jewellery"
-            android:parentActivityName=".Activities.MainActivity" />
+            android:parentActivityName=".activities.MainActivity" />
         <activity
-            android:name=".Activities.About_Us"
+            android:name=".activities.About_Us"
             android:label="About App"
-            android:parentActivityName=".Activities.MainActivity" />
+            android:parentActivityName=".activities.MainActivity" />
         <activity
-            android:name=".HelperActivity.Webview"
+            android:name=".helper_activity.Webview"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:parentActivityName=".Activities.MainActivity"
+            android:parentActivityName=".activities.MainActivity"
             android:windowSoftInputMode="adjustNothing|stateHidden" />
         <activity
-            android:name=".UsersActivities.Kailash_Soni"
-            android:parentActivityName=".Activities.About_Us" />
+            android:name=".users_activities.Kailash_Soni"
+            android:parentActivityName=".activities.About_Us" />
         <activity
-            android:name=".UsersActivities.Ujjwal_Soni"
-            android:parentActivityName=".Activities.About_Us" />
+            android:name=".users_activities.Ujjwal_Soni"
+            android:parentActivityName=".activities.About_Us" />
         <activity
-            android:name=".UsersActivities.Sunil_Soni"
-            android:parentActivityName=".Activities.About_Us" />
+            android:name=".users_activities.Sunil_Soni"
+            android:parentActivityName=".activities.About_Us" />
         <activity
-            android:name=".UsersActivities.Manish_Soni"
-            android:parentActivityName=".Activities.About_Us" />
+            android:name=".users_activities.Manish_Soni"
+            android:parentActivityName=".activities.About_Us" />
 
-        <service android:name=".Utils.MyFirebaseInstanceIDService">
+        <service android:name=".utils.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
-
-        <activity android:name=".UsersActivities.Kishor_Soni" />
-        <activity android:name=".UsersActivities.AnjaanSoni" />
-        <activity android:name=".UsersActivities.Ranveer" />
-        <activity android:name=".Activities.Kundan_Jewellery"></activity>
+        <activity android:name=".users_activities.Kishor_Soni" />
+        <activity android:name=".users_activities.AnjaanSoni" />
+        <activity android:name=".users_activities.Ranveer" />
+        <activity android:name=".activities.Kundan_Jewellery" />
+        <activity android:name=".helper_activity.Setting"></activity>
     </application>
 
 </manifest>

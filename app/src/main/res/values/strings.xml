@@ -54,5 +54,14 @@
     <string name="myprofile">My Profile</string>
     <string name="admob_app_id">ca-app-pub-9733613923055204~2060000795</string>
     <string name="ad_unit_id">ca-app-pub-9733613923055204/8345211693</string>
-
+    <string name="design">Unique</string>
+    <string name="filter">Filter</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="chooose_design">Choose Design</string>
+    <string name="weight">Weight</string>
+    <string name="newdesign">New Design</string>
+    <string name="topdesign">Top Design</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
 </resources>

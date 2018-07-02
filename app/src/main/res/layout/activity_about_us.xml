@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="satlaa.desijewellery.Activities.About_Us">
+    tools:context="satlaa.desijewellery.activities.About_Us">
 
 
     <TextView
@@ -71,7 +71,6 @@
         android:id="@+id/btn_sunil"
         android:layout_width="260dp"
         android:layout_height="60dp"
-        android:layout_alignParentEnd="true"
         android:layout_below="@+id/textView3"
         android:background="@drawable/sunil"
         android:foreground="?android:attr/selectableItemBackground" />

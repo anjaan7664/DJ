@@ -2,11 +2,13 @@ package satlaa.desijewellery.fragments;
 
 import android.app.DialogFragment;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v4.content.FileProvider;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -76,7 +78,7 @@ public class Full_Image extends DialogFragment {
         final int number = viewPager.getCurrentItem();
 
         final Photos image = images.get(selectedPosition);
-        myViewPagerAdapter = new MyViewPagerAdapter(getActivity(), images);
+        myViewPagerAdapter = new MyViewPagerAdapter(getActivity().getApplicationContext(), images);
         viewPager.setAdapter(myViewPagerAdapter);
         viewPager.addOnPageChangeListener(viewPagerPageChangeListener);
 
@@ -218,7 +220,8 @@ public class Full_Image extends DialogFragment {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("image/*");
         final File photoFile = new File(myDir, fname);
-        intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(photoFile));
+        Uri photoURI = FileProvider.getUriForFile(getActivity().getApplicationContext(), getActivity().getApplicationContext().getPackageName() + ".provider", photoFile);
+        intent.putExtra(Intent.EXTRA_STREAM, photoURI);
 
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         intent.putExtra(Intent.EXTRA_TEXT, "Weight - " + img_weight + " GM");
@@ -233,6 +236,5 @@ public class Full_Image extends DialogFragment {
             getActivity().sendBroadcast(new Intent(Intent.ACTION_MEDIA_MOUNTED, Uri.parse("file://mnt/sdcard/" + Environment.getExternalStorageDirectory())));
         }
     }
-
 
 }

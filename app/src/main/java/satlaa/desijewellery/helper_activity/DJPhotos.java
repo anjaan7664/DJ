@@ -6,13 +6,17 @@ import java.util.Map;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearSmoothScroller;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SimpleItemAnimator;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -44,14 +48,14 @@ import satlaa.desijewellery.adapter.RecycleViewAdapter;
 import satlaa.desijewellery.fragments.CustomDialog;
 import satlaa.desijewellery.fragments.Full_Image;
 import satlaa.desijewellery.R;
+import satlaa.desijewellery.utils.LocaleHelper;
 import satlaa.desijewellery.utils.Photos;
 
 
 public class DJPhotos extends AppCompatActivity {
 
-    private static final String TAG = DJPhotos.class.getSimpleName();
     private static final String url = "http://192.168.43.238/";
-    // private static final String url = "https://desijewel.in/";
+    //   private static final String url = "https://desijewel.in/";
     private static final String script = url + "android/android_script.php";
     static final String REQ_TAG = "VACTIVITY";
     public ArrayList<Photos> imagelist;
@@ -68,7 +72,10 @@ public class DJPhotos extends AppCompatActivity {
 
     RecyclerView.LayoutManager mLayoutManager;
     boolean isFirstTime = true;
-
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocaleHelper.onAttach(base));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,7 +145,6 @@ public class DJPhotos extends AppCompatActivity {
                         }
                     }
                     if (!isLoading && (totalItemCount - visibleItemCount - 10) <= (pastVisibleItems + viewThesold)) {
-                        pageNumber++;
                         performPagination();
                         isLoading = true;
                     }
@@ -165,6 +171,7 @@ public class DJPhotos extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
 
+                        pageNumber++;
                         progressBar.setVisibility(View.GONE);
                         imagelist.clear();
                         JSONArray heroArray = null;
@@ -195,7 +202,16 @@ public class DJPhotos extends AppCompatActivity {
 
                 progressBar.setVisibility(View.GONE);
                 if (error instanceof TimeoutError || error instanceof NoConnectionError) {
-                    Snackbar.make(findViewById(R.id.coordinatorLayout), "Sorry! Not connected to internet", Snackbar.LENGTH_LONG).show();
+                    Snackbar mSnackbar = Snackbar.make(findViewById(R.id.coordinatorLayout), "No Internet Connection", Snackbar.LENGTH_LONG)
+                            .setDuration(80000)
+                            .setAction("RETRY", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    getJsonResponsePost();
+                                }
+                            });
+                    mSnackbar.show();
+                   // Snackbar.make(findViewById(R.id.coordinatorLayout), "Sorry! Not connected to internet", Snackbar.LENGTH_LONG).show();
                 } else if (error instanceof AuthFailureError) {
 
                 } else if (error instanceof ServerError) {
@@ -241,6 +257,8 @@ public class DJPhotos extends AppCompatActivity {
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
+
+                        pageNumber++;
                         progressBarBottom.setVisibility(View.GONE);
                         if(imagelist == null)
                             imagelist = new ArrayList<>();
@@ -271,7 +289,19 @@ public class DJPhotos extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 if (error instanceof TimeoutError || error instanceof NoConnectionError) {
-                    Snackbar.make(findViewById(R.id.coordinatorLayout), "Internet is disconnected, Can't load more designs.", Snackbar.LENGTH_LONG).show();
+
+                    Snackbar mSnackbar = Snackbar.make(findViewById(R.id.coordinatorLayout), "No Internet Connection", Snackbar.LENGTH_LONG)
+                            .setDuration(80000)
+
+                            .setAction("RETRY", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    performPagination();
+                                }
+                            });
+
+                    mSnackbar.show();
+
                 } else if (error instanceof AuthFailureError) {
 
 

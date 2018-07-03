@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
     Button button;
     private FirebaseAnalytics mFirebaseAnalytics;
     private ShareActionProvider mShareActionProvider;
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocaleHelper.onAttach(base));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,10 +106,7 @@ public class MainActivity extends AppCompatActivity {
         isStoragePermissionGranted();
 
     }
-    @Override
-    protected void attachBaseContext(Context base) {
-        super.attachBaseContext(LocaleHelper.onAttach(base));
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -131,11 +132,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        String language;
+
         switch (item.getItemId()) {
             case R.id.menuSettings:
-
-
                 Intent intent = new Intent(MainActivity.this, Setting.class);
                 startActivity(intent);
                 break;
@@ -173,7 +172,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= 23) {
             if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                    == PackageManager.PERMISSION_GRANTED) {
+                    == PackageManager.PERMISSION_GRANTED  && checkSelfPermission(android.Manifest.permission.READ_EXTERNAL_STORAGE)
+                    == PackageManager.PERMISSION_GRANTED ){
 
             } else {
                 requestPermissions(new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);

@@ -1,5 +1,6 @@
 package satlaa.desijewellery.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 
 import satlaa.desijewellery.helper_activity.DJPhotos;
 import satlaa.desijewellery.R;
+import satlaa.desijewellery.utils.LocaleHelper;
 
 public class Emboss_Jewellery extends AppCompatActivity {
     ImageView imagebutton;
@@ -22,13 +24,15 @@ public class Emboss_Jewellery extends AppCompatActivity {
     Button button;
     private FirebaseAnalytics mFirebaseAnalytics;
     @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocaleHelper.onAttach(base));
+    }
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emboss);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
-        MobileAds.initialize(getApplicationContext(),
-                "ca-app-pub-9733613923055204~2060000795");
         AdRequest adRequest = new AdRequest.Builder().build();
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-9733613923055204/6428159631");

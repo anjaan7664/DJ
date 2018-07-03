@@ -1,5 +1,6 @@
 package satlaa.desijewellery.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,20 +16,22 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 
 import satlaa.desijewellery.R;
 import satlaa.desijewellery.helper_activity.DJPhotos;
+import satlaa.desijewellery.utils.LocaleHelper;
 
 public class Desi_Jewellery extends AppCompatActivity {
     ImageView imagebutton;
     Button button;
     InterstitialAd interstitialAd;
      FirebaseAnalytics mFirebaseAnalytics;
-
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocaleHelper.onAttach(base));
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_desi_jewellery);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
-        MobileAds.initialize(getApplicationContext(),
-                getString(R.string.admob_app_id));
 
         AdRequest adRequest = new AdRequest.Builder().build();
         interstitialAd = new InterstitialAd(this);

@@ -1,5 +1,6 @@
 package satlaa.desijewellery.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,12 +16,17 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 
 import satlaa.desijewellery.R;
 import satlaa.desijewellery.helper_activity.Webview;
+import satlaa.desijewellery.utils.LocaleHelper;
 
 public class Kundan_Jewellery extends AppCompatActivity {
     ImageView imagebutton;
     private InterstitialAd mInterstitialAd;
     Button button;
     private FirebaseAnalytics mFirebaseAnalytics;
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocaleHelper.onAttach(base));
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

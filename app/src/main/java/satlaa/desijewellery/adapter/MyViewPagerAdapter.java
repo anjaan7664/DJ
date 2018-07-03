@@ -102,9 +102,10 @@ public class MyViewPagerAdapter extends PagerAdapter {
         container.removeView((View) object);
     }
 
-    @Override
+ /*  commented on 03-07
+  @Override
     public int getItemPosition(Object object){
         return PagerAdapter.POSITION_NONE;
-    }
+    }*/
 
 }

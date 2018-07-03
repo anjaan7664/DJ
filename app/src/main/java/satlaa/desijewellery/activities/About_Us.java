@@ -1,5 +1,6 @@
 package satlaa.desijewellery.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,10 +14,14 @@ import satlaa.desijewellery.users_activities.Kishor_Soni;
 import satlaa.desijewellery.users_activities.Ranveer;
 import satlaa.desijewellery.users_activities.Sunil_Soni;
 import satlaa.desijewellery.users_activities.Ujjwal_Soni;
+import satlaa.desijewellery.utils.LocaleHelper;
 
 public class About_Us extends AppCompatActivity {
     View view;
-
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocaleHelper.onAttach(base));
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

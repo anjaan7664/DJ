@@ -18,29 +18,31 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <satlaa.desijewellery.utils.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:clipToPadding="false">
 
                     <ImageView
                         android:id="@+id/thumb_image"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
                         android:scaleType="centerCrop" />
                     <ProgressBar
                         android:id="@+id/progressBarThumb"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center" />
+
                 </android.support.v7.widget.CardView>
-            </satlaa.desijewellery.utils.SquareLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"

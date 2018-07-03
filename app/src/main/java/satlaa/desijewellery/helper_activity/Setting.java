@@ -16,11 +16,16 @@ import android.widget.Toast;
 
 import satlaa.desijewellery.R;
 import satlaa.desijewellery.activities.MainActivity;
-import satlaa.desijewellery.utils.LanguageHelper;
 import satlaa.desijewellery.utils.LocaleHelper;
 
 public class Setting extends AppCompatActivity {
-Button privacy, language;
+    Button privacy, language;
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocaleHelper.onAttach(base));
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +51,7 @@ Button privacy, language;
     }
 
     public void openDialog(View view) {
-        final CharSequence[] langOption ={"Hindi", "English"};
+        final CharSequence[] langOption = {"Hindi", "English"};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Choose Langauge");
@@ -54,29 +59,26 @@ Button privacy, language;
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 String language;
-            if(langOption[which] == "Hindi"){
+                if (langOption[which] == "Hindi") {
 
-               language = "hi";
-               LanguageHelper.storeUserLanguage(getApplicationContext(), language);
-               LanguageHelper.updateLanguage(getApplicationContext(), language);
+                    language = "hi";
+                    LocaleHelper.setLocale(getApplicationContext(), language);
 
-               Intent intent = getBaseContext().getPackageManager()
-                       .getLaunchIntentForPackage(getBaseContext().getPackageName());
-                assert intent != null;
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-               startActivity(intent);
+                    Intent intent = getBaseContext().getPackageManager()
+                            .getLaunchIntentForPackage(getBaseContext().getPackageName());
+                    assert intent != null;
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                } else {
+                    language = "en";
+                    LocaleHelper.setLocale(getApplicationContext(), language);
+
+                    Intent in = getBaseContext().getPackageManager()
+                            .getLaunchIntentForPackage(getBaseContext().getPackageName());
+                    assert in != null;
+                    in.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(in);
                 }
-                else {
-                language = "eng";
-                LanguageHelper.storeUserLanguage(getApplicationContext(), language);
-                LanguageHelper.updateLanguage(getApplicationContext(), language);
-
-                Intent in = getBaseContext().getPackageManager()
-                        .getLaunchIntentForPackage(getBaseContext().getPackageName());
-                assert in != null;
-                in.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(in);
-           }
             }
         });
 
@@ -84,8 +86,5 @@ Button privacy, language;
         builder.show();
 
     }
-    private void updateViews(String languageCode) {
-        Context context = LocaleHelper.setLocale(this, languageCode);
-        Resources resources = context.getResources();
-    }
+
 }

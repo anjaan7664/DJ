@@ -48,6 +48,7 @@ import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
 import satlaa.desijewellery.R;
+import satlaa.desijewellery.utils.LocaleHelper;
 
 public class Webview extends AppCompatActivity {
     String link;
@@ -60,7 +61,10 @@ public class Webview extends AppCompatActivity {
     private ValueCallback<Uri[]> mUMA;
     private final static int FCR = 1;
 
-
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocaleHelper.onAttach(base));
+    }
     @SuppressLint({"SetJavaScriptEnabled", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {

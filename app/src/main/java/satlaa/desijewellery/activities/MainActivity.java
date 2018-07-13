@@ -4,6 +4,8 @@ import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
@@ -31,10 +33,8 @@ import satlaa.desijewellery.helper_activity.Webview;
 import satlaa.desijewellery.utils.LocaleHelper;
 
 public class MainActivity extends AppCompatActivity {
-    private InterstitialAd mInterstitialAd;
     Button button;
-    private FirebaseAnalytics mFirebaseAnalytics;
-    private ShareActionProvider mShareActionProvider;
+
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(LocaleHelper.onAttach(base));
@@ -44,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        FirebaseAnalytics mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
 
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         ImageView website = findViewById(R.id.website);
         website.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
                 1);
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-9733613923055204~2060000795");
-        mInterstitialAd = new InterstitialAd(this);
+        InterstitialAd mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-9733613923055204/8441414611");
         AdRequest adRequest = new AdRequest.Builder().build();
         mInterstitialAd.loadAd(adRequest);
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        button = (Button) findViewById(R.id.btn_djpl);
+        button = findViewById(R.id.btn_djpl);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,6 +103,26 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        button = findViewById(R.id.btn_silver);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Silver_Jewellery.class);
+                startActivity(intent);
+            }
+        });
+
+        button = findViewById(R.id.btn_kundan);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Kundan_Jewellery.class);
+                startActivity(intent);
+            }
+        });
+
+
         isStoragePermissionGranted();
 
     }
@@ -113,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
         getMenuInflater().inflate(R.menu.items, menu);
         MenuItem item = menu.findItem(R.id.share);
-        mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(item);
+        ShareActionProvider mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(item);
         mShareActionProvider.setShareIntent(getDefaultShareIntent());
 
         getMenuInflater().inflate(R.menu.menus, menu);
@@ -172,8 +192,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= 23) {
             if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                    == PackageManager.PERMISSION_GRANTED  && checkSelfPermission(android.Manifest.permission.READ_EXTERNAL_STORAGE)
-                    == PackageManager.PERMISSION_GRANTED ){
+                    == PackageManager.PERMISSION_GRANTED && checkSelfPermission(android.Manifest.permission.READ_EXTERNAL_STORAGE)
+                    == PackageManager.PERMISSION_GRANTED) {
 
             } else {
                 requestPermissions(new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
@@ -197,7 +217,9 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
     }
-    public static void loadAd(View view){
+
+    // Loading ad for DJphotos so it directly show without wasting time and sending it to Djphotos when method call
+    public static void loadAd(View view) {
         AdView mAdView;
         mAdView = (AdView) view.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
